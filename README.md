@@ -161,6 +161,11 @@ docker build -t auth-service .
 docker run -p 3001:3001 --env-file .env auth-service
 ```
 
+```bash
+# run using hosted mongo instance
+docker run -p 3001:3001 --env-file .env.prod auth-service:latest
+```
+
 ## Error Handling
 
 - **400 Bad Request**: Invalid registration data or user already exists
